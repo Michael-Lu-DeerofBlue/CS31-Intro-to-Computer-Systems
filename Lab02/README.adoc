@@ -1,0 +1,38 @@
+= Lab2
+
+This is starting point code for CS31 Lab 2
+
+To compile:
+
+
+  make
+
+To clean-up compiled code:
+
+   make clean
+
+To answer Part1 questions, open `part1.txt` in your favorite text editor and
+edit the file adding in your answers.
+
+To answer Part2 questions, open `lab2.c` and add your C code solutions (then
+type make to compile):
+
+   make
+   ./lab2
+
+To add and commit changes to your git repo and push to GitHub:
+
+   git add lab2.c part1.txt
+   git commit       # opens an editor for entering your commit comment
+   git push
+
+You can also combine the commit and commit message in one command
+(and you only need to git add files you have modified since the
+last time you add-commit-pushed):
+
+   git add lab2.c
+   git commit -m "finished q1-q4"
+   git push
+
+Make sure that you perform an add, commit, and push of your `lab2.c`
+and `part1.txt` solutions before the due date of the lab.

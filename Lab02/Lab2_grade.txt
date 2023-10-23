@@ -1,0 +1,72 @@
+
+
+Lab2 : C Arrays and Sorting
+
+Repo: ylu4
+p1q1: 2
+p1q1 Comments: 
+
+p1q2: 2
+p1q2 Comments: 
+
+p1q3: 2
+p1q3 Comments: 
+
+p1q4: 2
+p1q4 Comments: 
+
+p1q5a: 5
+p1q5a Comments: Correct answer but you need to show your work! (-10pt)
+
+p1q5b: 2
+p1q5b Comments: Correct but formula required (-1pt)
+
+p1q5c: 1
+p1q5c Comments: again--correct but formula requied (-1pt)
+
+p1q5d: 5
+p1q5d Comments: Well reasoned answer but you need to show your work! (-1pt)
+
+p1q6: 6
+p1q6 Comments: 
+
+p1q7: 8
+p1q7 Comments: 
+
+p1q8: 15
+p1q8 Comments: Small error in a: 12 is c in hex-not b. (-1pt)
+
+p1q9: 7
+p1q9 Comments: All correct but you were required to show your answers for the first
+5! So sorry--thats just the rubric (-5pt)
+
+Part1 (/67): 57
+p2q1: 10
+p2q1 Comments: 
+
+p2q2: 10
+p2q2 Comments: 
+
+p2q3: 10
+p2q3 Comments: 
+
+p2q4: 10
+p2q4 Comments: 
+
+p2q5: 10
+p2q5 Comments: 
+
+p2q6: 10
+p2q6 Comments: 
+
+Style: 3
+Style Comments: Dont forget about the 80 character limit! That was quite the
+formatting XD (-1pt)
+
+Part2 (/64): 63
+Total (/131): 120
+Score: 91.6%
+General Comments: Good work overall-just dont forget to show your work when required!
+
+: 
+
