@@ -1,0 +1,25 @@
+= Logisim lab
+
+== Part 1: Sign extender and 4-bit adder
+
+Build a 4-bit adder step-by-step with guided instructions.
+
+Starting point code in `part1.circ`
+
+== Part 2: Building an ALU
+
+Build an ALU using existing Logisim circuits. Note that Logisim has an adder
+circuit, and a multiplexer circuit, and other circuits. You can use all of
+these existing circuits (but not the subtractor) in combination with basic
+gates to build your ALU.  You do not need to implement the ALU completely from
+basic gates.
+
+Starting point code in `alu.circ`
+
+== Tips
+
+* See the Logisim documentation, and the in-lab examples to help you.
+
+* If Logisim seems to be freaking out, just save, quit and re-open
+  your file again.
+

@@ -1,0 +1,25 @@
+
+
+Lab8 : Command Shell
+
+Repo: lho2-ylu4
+>>> checkpoint: 
+[ up to 1 point ]: 1
+>>> parsecmd_dynamic: Great Work!
+[ up to 6.5 points ]: 6.5
+>>> parse_cmd valgrind: No errors or leaks
+[ up to 1 point ]: 1
+>>> parse_cmd style: Well commented!
+[ up to 1 point ]: 1
+>>> shell basic correctness: Genrally correct when taken into account the odd indexing of command
+id
+[ up to 7 points ]: 7
+>>> shell specific correctness: history id start at 0 instead of 1 making this a little weird + give
+error when inputting white space
+[ up to 1.5 points ]: 0.5
+>>> shell valgrind: No errors or leaks
+[ up to 1 point ]: 1
+>>> shell style: Good function + well commented
+[ up to 1 point ]: 1
+Total (up to 20 points): 19
+

@@ -1,0 +1,49 @@
+TODO: (1) Complete this side (partitioning function), implement, & test
+      (2) Complete reverse side (overall program design), implement, & test
+(To print, run 'lpr design_worksheet')
+********************************************************************************
+(1) Board-partitioning function design
+    Reminder: Look at the whole LAB WRITEUP for information on how partitioning
+              should work and suggestions on how to get started.
+Q1: What parameters does this function need and what does it return?  Design 
+    its prototype? 
+    (Pro tip: pass-by-pointer params are a way to "return" multiple values.)
+    All the new variables store in gol_data. 
+    PASSING IN: The num of rows and cols; the num of threads; and whether we 
+    want it to be col-partition or row-partition.
+    RETURN: An array that has all the thread nodes.
+Q2: What does this function do?  Design your function's high-level control 
+    flow, and then refine in details. 
+    This function seperates the rows and cols into different parts. It first reads
+    whether the user wants to part in row or cols. Then, it divides the num of rows
+    or cols with the num_of_threads. It mods the num_of_threads to see how many threads
+    needs an extra row or col. Then adding the extra to the thread.
+Q3: How are you going to test your function's correctness?  What are the 
+    different config and command-line options you want to test?
+    We printed the array in the end of the partition function to check if they part
+    the rows and cols correctly.
+
+(2) Overall parallel gol program design
+    Reminder: Look at the LAB WRITEUP to understand requirements & control flow
+Q1: What changes need to be made to main's control flow for pthreads? 
+    Intialize the barrier, intialize the mutex, create an array of play_gol data
+    and copy the play_gol data into the array, assign the partition nodes to the
+    play_gol. Create threads for different outputs. Join threads for different
+    outputs. Free the tids and the tid_args.
+Q2: What additional state do you need to add to the parallel solution?  
+    New globals or data structures?  Modifications to existing data structures?
+    Two global variables for mutex and barrier. There are many copies of the 
+    gol_data now.
+Q3: What changes need to be made to parallelize play_gol?  Design the 
+    high-level control flow of the pthread version of play_gol, and refine as 
+    needed.  Do you need any new helper functions?  Modify existing ones?  
+    Any parts only 1 thread performs?
+    Play_gol needs to be a fuction of a generic pointer now. In play_gol, each
+    thread needs to have an id and there should be only one thread doing the
+    printing and the clearing. There should be barries in play_gol.
+Q4: Does your solution need synchronization?  How many and what type?  Where?
+    For changing the total_lives, there should be a mutex that makes sure that
+    there's only one thread accessing the global data now. Thus, a mutex lock
+    and unlock is around that command. There are barriers before the mutex lock,
+    before the board starts to print, and before the function returns to wait
+    for the thread 0 to do all the print and clearing.

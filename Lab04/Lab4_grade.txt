@@ -1,0 +1,31 @@
+
+
+Lab4 : Pointers and Assembly
+
+Repo: fyi1-ylu4
+
+>>  Part1: get_values(): 
+[ pts off up to 2 ]: 0
+
+>>  Part1: Statistics & sorting: Used float instead of double for Mean and SD (-0.5pt)
+[ pts off up to 1.5 ]: 0.5
+
+>>  Part1: General & miscellaneous: Great work! No valgrind errors and leaks!
+[ pts off up to 1.5 ]: 0
+
+>>  Part2: Assembly language sum.s: Does not return proper output when n=0 (-0.5pt)
+[ pts off up to 4.5 ]: 0
+-------------------------
+Correctness (9pts): 8.5
+
+>>  program style comments: Great comment and style
+
+[ pts off up to 1 ]: 0
+
+-------------------------
+Total (10pts): 9.5
+>> comments to the students: Keep up the good work!
+
+[ Comments for professors ] : 
+
+

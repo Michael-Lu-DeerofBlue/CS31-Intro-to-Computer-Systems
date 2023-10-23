@@ -1,0 +1,30 @@
+
+
+Lab6 : Game of Life
+
+Repo: lho2-ylu4
+
+>>  Initialization and output: 
+[ pts off up to 2.5 ]: 
+
+>>  Board management: 
+[ pts off up to 2 ]: 0
+
+>>  Simulation: Correctly update each cell including edges and corners.
+[ pts off up to 3.5 ]: 0
+
+>>  Timing & valgrind: No memory leak and correct timimg! Great jobs!
+[ pts off up to 1.5 ]: 
+-------------------------
+Correctness (9.5pts): 9.5
+
+>>  : 
+
+----------------------
+Program style (1pts): 1
+
+-------------------
+Total (10.5pts): 10.5
+>> General comments: Great work!
+
+

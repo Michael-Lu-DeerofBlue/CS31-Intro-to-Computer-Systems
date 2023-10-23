@@ -1,0 +1,65 @@
+Enter Your Names Here: Michael Lu, Ka Hei Levin Ho
+----------------------
+
+maze puzzle 1: getting off of the roof  
+==============
+In phase one, we noticed that the function goes through a function called 
+“strings_not_equal.” Inside the function “strings_not_equal,” e noticed that 
+register x19 points to an memory address which stores an interesting string 
+called “it’s never too late to be what you might have been.” which we supposed
+ might be the answer, and that it correct. In high level C code, phase one is 
+comparing strings.
+
+
+--------------------------------------------------------------------
+maze puzzle 2: getting past the residential floors
+==============
+In phase two, we notice that the “read_six_int” function is reading the user 
+input because it is branching to the “scanf” function of C. The first user 
+input needs to be larger than 1, or it will tripped up. Then, as we trace 
+through the ARM code in phase two, we found out that there is a for loop. The 
+CPU is left shifting the next user input by one checking if it equals to the 
+previous input. Thus, we found out that the six inputted numbers are in a 
+geometric sequence with a ratio of two. In high level C code, it’s continuing
+ left shifting out first input by two, and comparing it with the next input.
+
+--------------------------------------------------------------------
+maze puzzle 3: getting past Admissions
+==============
+In phase three, we notice that the “sscanf” function is actually checking how 
+many numbers in the user input matches with the placeholder. Thus, we need to 
+input two integers to avoid being tripped up. Then, we found out that code is 
+assigning integers to the registers and comparing them with the user input. 
+Thus, if we input the correct two integers that code is assigning the the 
+registers, we can pass this level. If the first integer is 0, it will just 
+compare the second integer with 325. Thus, the input “0 325” is correct. In 
+high level C code, it is first checking whether we inputed two integers, and 
+checking our second input with our first input.
+
+--------------------------------------------------------------------
+maze puzzle 4: getting past the Registrar's Office
+==============
+In phase four, the number of input needs to be equal to 2. The first input 
+needs to be less or equal to 14. To escape the floor, both the second input 
+and the register w0 after func4 needs to be 3. We found out that the code 
+need to go through “func4+64” twice so that w0 can be equal to 3 when it 
+returned. The number of times of going through “func+64” is dependent on the 
+user input and the register w3. In the first loop, w3 is 7, so the user input
+needs to be larger than 7. In the second loop, w3 is 11, so the user input 
+needs to be larger than 11. In the thrift loop, w3 is 13, but at this point 
+we want the function to return to the link. Thus, when we make the input 13, 
+the function will go through “func+64” twice, and it break through func4 
+correctly.  When the second input is 2, it will escape the floor. In high 
+level C code, it is first checking whether we inputed two integers. Then it is
+checking whether the recursive function outputs three. In the recursive 
+function, it is checking whether our input equals, greater or larger than the
+result of each loop. When the loop is repeated twice and breaks at the third
+ time, the answer is correct.
+
+--------------------------------------------------------------------
+Anything else?
+=============
+In phase five, we found out that it is first checking where our input is 6 
+bytes. Then, it goes through the loop six times. We want w2 to be equal to 44 
+after the six loops. We haven’t got the answer.
+

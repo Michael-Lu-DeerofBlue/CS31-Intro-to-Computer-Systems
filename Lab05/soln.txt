@@ -1,0 +1,4 @@
+It is never too late to be what you might have been.
+2 4 8 16 32 64
+0 325
+13 3

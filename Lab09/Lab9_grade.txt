@@ -1,0 +1,33 @@
+
+
+Lab9 : Parallel GoL
+
+Repo: lho2-ylu4
+>> Checkpoint: No design worksheet but pthread control flow present
+[ pts off up to 1 ]: 0
+>> Partitioning: 
+[ pts off up to 2 ]: 0
+
+>> Synchronization and Parallelization: More calls to wait at the barrier than needed. E.g. you do not need to
+use the barrier around locking the total_live count since you use a
+mutex. This wait likely causes a significant slowdown
+[ pts off up to 7 ]: 0.5
+
+>>  Simulation Correctness: 
+[ pts off up to 2 ]: 0
+>> Graphical Visualization works: 
+[ pts off up to 1 ]: 0
+-------------------------
+Correctness Total (13pts): 12.5
+
+>> Program style: 
+[ pts off up to 1 ]: 0
+
+>> Valgrind: 
+[ pts off up to 1 ]: 0
+
+-------------------
+Total (15pts): 14.5
+>> General comments: 
+
+
